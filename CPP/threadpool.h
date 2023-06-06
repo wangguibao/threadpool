@@ -20,7 +20,7 @@ public:
     ~ThreadPool();
 
 public:
-    void addTask(Task task);
+    void add_task(Task task);
 
 private:
     static void thread_func(ThreadPool *pool);
