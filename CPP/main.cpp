@@ -53,7 +53,7 @@ int main()
         task.arg = task_arg;
         task.run = looper1;
 
-        thread_pool.addTask(task);
+        thread_pool.add_task(task);
     }
 
     for (int i = 3; i < 6; ++i) {
@@ -66,7 +66,7 @@ int main()
         task.arg = task_arg;
         task.run = looper2;
 
-        thread_pool.addTask(task);
+        thread_pool.add_task(task);
     }
 
     std::this_thread::sleep_for(10s);
