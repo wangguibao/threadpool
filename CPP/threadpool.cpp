@@ -24,7 +24,7 @@ ThreadPool::~ThreadPool() {
     std::cout << "ThreadPool quit" << std::endl;
 }
 
-void ThreadPool::addTask(Task task) {
+void ThreadPool::add_task(Task task) {
     std::lock_guard<std::mutex> lock(mutex);
     task_queue.push(task);
 
